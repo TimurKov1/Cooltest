@@ -1,0 +1,14 @@
+.circle {
+    width: 1300px;
+    height: 1300px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FF8282 0%, #5743CA 100%);
+    position: absolute;
+    top: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+    .circle {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+.table__row {
+    transition: 0.3s;
+}
+
+.table__row:hover {
+    cursor: pointer;
+    background-color: #FFBBBB;
+}
+
+.table__row:hover .point {
+    color: #000;
+}
+
+.td {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.point {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.link {
+    display: contents;
+}
+
+@media screen and (max-width: 700px) {
+    .td {
+        font-size: 18px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,19 @@
+.select {
+    cursor: pointer;
+    border: 1px solid #E8E8E8;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    background-image: url(../../public/arrow.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    width: auto;
+    padding: 15px 25px;
+    padding-right: 35px;
+    background-color: #fff;
+    margin: 0;
+}

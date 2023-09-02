@@ -1,0 +1,139 @@
+.button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #FFBBBB;
+    border: 2px solid #FFBBBB;
+    border-radius: 35px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 40px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FFA4A4;
+    border: 2px solid #FFA4A4;
+}
+
+.button_violent {
+    background-color: #5743CA;
+    border: 2px solid #5743CA;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.button_violent:hover {
+    background-color: transparent;
+    border: 2px solid #5743CA;
+    color: #000;
+}
+ 
+.button_white {
+    color: #000;
+    background-color: #fff;
+}
+
+.button_white:hover {
+    background-color: #FFF0F0;
+    border: 2px solid #FFF0F0;
+}
+
+.button_squared {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: 20px;
+    color: #000;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+.button_squared:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.button_plus {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 0px 10px #FF8282;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_plus:hover {
+    background-color: #FFF0F0;
+}
+
+.plus {
+    width: 20px;
+    height: 20px;
+}
+
+.button_bordered {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+
+.button_bordered:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #000;
+}
+
+.button_gradient {
+    font-weight: 700;
+    font-size: 28px;
+    padding: 25px 70px;
+    background: linear-gradient(90deg, #FF8282 0%, #5743CA 100%);
+    border-radius: 100px;
+    border: none;
+    transition: 0.3s;
+}
+
+.button_gradient:hover {
+    border: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .button_squared {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .button_squared {
+        width: 95%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .button_plus {
+        width: 30px;
+        height: 30px;
+    }
+
+    .plus {
+        width: 15px;
+        height: 15px;
+    }
+
+    .button_gradient {
+        font-size: 24px;
+        padding: 25px 50px;
+    }
+}

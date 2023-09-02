@@ -1,0 +1,16 @@
+.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #FF8282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mark {
+    color: #FF8282;
+    font-weight: 900;
+    font-size: 28px;
+}

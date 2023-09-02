@@ -1,0 +1,47 @@
+.card__circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px solid #44FF8F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__mark {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.border_green {
+    border: 5px solid #44FF8F;
+}
+
+.border_blue {
+    border: 5px solid #449AFF;
+}
+
+.border_yellow {
+    border: 5px solid #FFBF44;
+}
+
+.border_red {
+    border: 5px solid #FF4444;
+}
+
+.green {
+    color: #44FF8F;
+}
+
+.blue {
+    color: #449AFF;
+}
+
+.yellow {
+    color: #FFBF44;
+}
+
+.red {
+    color: #FF4444;
+}

@@ -1,0 +1,31 @@
+.tabs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.tab {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.tab_active {
+    font-weight: 900;
+}
+
+.tab__between {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .tab {
+        font-size: 20px;
+    }
+}

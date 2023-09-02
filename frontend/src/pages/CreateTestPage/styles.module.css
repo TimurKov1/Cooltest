@@ -1,0 +1,102 @@
+.main__body {
+    padding: 100px;
+    overflow-x: scroll;
+    height: calc(100vh - 302px);
+}
+
+.main__title {
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-size: 56px;
+    font-weight: 800;
+    outline: none;
+    margin: 0;
+    width: auto;
+}
+
+.main__title::placeholder {
+    color: #C0C0C0;
+}
+
+.main__group {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.main__text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.main__input {
+    background-color: transparent;
+    border: 3px solid #FF8282;
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 10px;
+    width: 100px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 1600px) {
+    .main__body {
+        padding: 100px 300px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main__body {
+        padding-bottom: 300px;
+        overflow-x: visible;
+        height: auto;
+    }
+
+    .main__title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main__body {
+        padding-bottom: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main__body {
+        padding: 50px;
+        padding-bottom: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main__body {
+        padding-bottom: 225px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__body {
+        padding: 50px 30px;
+        padding-bottom: 100px;
+    }
+
+    .main__title {
+        font-size: 36px;
+    }
+
+    .main__group {
+        margin-top: 20px;
+    }
+
+    .main__text {
+        font-size: 18px;
+    }
+
+    .main__input {
+        font-size: 18px;
+    }
+}

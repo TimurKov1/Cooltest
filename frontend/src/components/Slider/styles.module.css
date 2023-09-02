@@ -1,0 +1,150 @@
+.slider {
+    width: calc(100% - 160px);
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+}
+
+.slider__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider__arrow {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+}
+
+.slider__arrow_white {
+    display: none;
+}
+
+.slider__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.slider__body {
+    background: linear-gradient(90deg, #FF8282 0%, #5743CA 100%);
+    border-radius: 100px;
+    padding: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.slider__text {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width: 1600px) {
+    .slider {
+        width: 1200px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .slider {
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .slider__body {
+        flex-direction: column;
+        padding: 25px 140px;
+        border-radius: 50px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+    }
+
+    .slider__button {
+        position: absolute;
+    }
+
+    .slider__button_left {
+        left: 50px;
+    }
+
+    .slider__button_right {
+        right: 50px;
+    }
+
+    .slider__arrow_default {
+        display: none;
+    }
+
+    .slider__arrow_white {
+        display: block;
+    }
+
+    .slider__text {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider__text {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .slider__arrow {
+        width: 40px;
+        height: 40px;
+    }
+
+    .slider__button_left {
+        left: 30px;
+    }
+
+    .slider__button_right {
+        right: 30px;
+    }
+
+    .slider__body {
+        padding: 25px 100px;
+    }    
+    
+    .button_small {
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .slider__body {
+        padding: 25px 40px;
+        padding-bottom: 80px;
+    }
+
+    .slider__button {
+        bottom: 20px;
+    }
+
+    .slider__button_left {
+        left: 40px;
+    }
+
+    .slider__button_right {
+        right: 40px;
+    }
+}

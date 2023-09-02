@@ -1,0 +1,137 @@
+.question__text {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.question__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF8282;
+    margin: 30px 0;
+}
+
+.question__radio {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.question__input {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.question__label {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.question__input + .question__label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.question__input + .question__label::before {
+    cursor: pointer;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #E8E8E8;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.question__input_green + .question__label::before {
+    background-color: #44FF8F;
+    border: 2px solid #44FF8F;
+}
+
+.question__input_red + .question__label::before {
+    background-color: #FF4444;
+    border: 2px solid #FF4444;
+}
+
+.question__input_checkbox + .question__label::before {
+    border-radius: 5px;
+}
+
+.question__input:checked + .question__label::before {
+    border-color: #FF8282;
+    background-image: url(../../public/circle.svg);
+    background-size: 14px;
+}
+
+.question__input_checkbox:checked + .question__label::before {
+    background-image: url(../../public/rectangle.svg);
+}
+
+.question__write {
+    display: flex;
+    align-items: center;
+}
+
+.question__answer {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.question__input_answer {
+    border: 3px solid #FF8282;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 28px;
+    padding: 10px 20px;
+    margin-left: 30px;
+    width: 300px;
+}
+
+.green {
+    color: #44FF8F;
+}
+
+.red {
+    color: #FF4444;
+}
+
+@media screen and (max-width: 700px) {
+    .question__text {
+        font-size: 24px;
+    }
+
+    .question__title {
+        font-size: 20px;
+    }
+
+    .question__label, .question__answer {
+        font-size: 24px;
+    }
+
+    .question__input_answer {
+        font-size: 24px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .question__text {
+        font-size: 22px;
+    }
+
+    .question__title {
+        font-size: 18px;
+    }
+
+    .question__label {
+        font-size: 22px;
+    }
+}
